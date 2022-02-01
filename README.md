@@ -8,4 +8,4 @@ Each directory contains one "project".
 
 * `cd` into the directory.
 * Run `make`.
-* Run the resulting executable.
+* Run the resulting executable in `bin/`.
