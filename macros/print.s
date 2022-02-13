@@ -1,4 +1,4 @@
-%include "macros.mac"
+%include "macros.s"
 
 global _start
 
