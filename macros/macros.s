@@ -7,7 +7,7 @@
 ; unique label name for each time the macro is called
 ; prevents redefining errors
 %%print:
-    mov cl, [rax]     ; store first byte of the text in cl
+    mov cl, [rax]     ; store current byte of the text in cl
                       ; cl is the lowest 8-bits of the rcx register
     cmp cl, 0         ; check whether it's 0, a.k.a the null byte
     je %%print_text   ; if it is null, print the string
