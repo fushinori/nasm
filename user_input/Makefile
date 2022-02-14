@@ -1,7 +1,7 @@
 executable: object
 	ld -o bin/user_input bin/user_input.o
 object: mkdir
-	nasm -f elf64 -o bin/user_input.o user_input.s
+	nasm -f elf64 -o bin/user_input.o user_input.asm
 mkdir:
 	# check if bin exists and mkdir if it doesn't
 	ls bin &> /dev/null || mkdir bin

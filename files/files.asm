@@ -1,4 +1,4 @@
-%include "constants.s"
+%include "constants.asm"
 
 global _start
 
