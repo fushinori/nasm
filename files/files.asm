@@ -21,10 +21,16 @@ _start:
     syscall
 
     ; write to file
+    push rax                     ; push `fd` to stack
     mov rdi, rax                 ; set `fd`
     mov rax, SYS_WRITE
     mov rsi, msg
     mov rdx, len
+    syscall
+
+    ; close file
+    mov rax, SYS_CLOSE
+    pop rdi                      ; pop `fd` off stack
     syscall
 
     ; exit

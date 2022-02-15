@@ -1,5 +1,7 @@
 SYS_WRITE equ 1
-SYS_OPEN equ 2
+SYS_OPEN  equ 2
+SYS_CLOSE equ 3
+
 
 ; Flags for SYS_OPEN
 O_ACCMODE    equ 0q00000003
